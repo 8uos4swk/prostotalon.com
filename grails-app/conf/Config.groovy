@@ -89,3 +89,10 @@ log4j = {
            'org.hibernate',
            'net.sf.ehcache.hibernate'
 }
+
+// Added by the Spring Security Core plugin:
+grails.plugins.springsecurity.password.algorithm='SHA-512'
+// Added by the Spring Security Core plugin:
+grails.plugins.springsecurity.userLookup.userDomainClassName = 'prostotalon.com.admin.SecUser'
+grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'prostotalon.com.admin.SecUserSecRole'
+grails.plugins.springsecurity.authority.className = 'prostotalon.com.admin.SecRole'
